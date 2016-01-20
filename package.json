@@ -1,9 +1,10 @@
 {
   "name": "NewToAngularJS",
   "version": "0.0.1",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
+    "angular": "^1.4.8"
   },
+  "devDependencies": {},
   "engines": {
     "node": ">=0.10.0"
   }
