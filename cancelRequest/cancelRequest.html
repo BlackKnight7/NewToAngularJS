@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+<head lang="en">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Cancel Request Demo</title>
 </head>
-<body>
+<body ng-app="bk.demo">
+<div ng-controller="demoController">
+    <h1>hello</h1>
+    <p>This is one test for http request</p>
 
+    <button ng-click="send()">Send</button>
+    <button ng-click="cancel()">Cancel</button>
+</div>
 </body>
+<script src="../node_modules/angular/angular.js"></script>
+<script src="cancelRequest.js"></script>
+<script src="dataFactory.js"></script>
 </html>
