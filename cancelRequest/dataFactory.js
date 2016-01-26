@@ -27,10 +27,15 @@
                 deferredAbort.resolve();
             };
 
+            var timeout = setTimeout(function () {
+                deferredAbort.resolve();
+            }, 2000);
+
             promise.finally(
                 function () {
                     promise.abort = angular.noop;
                     deferredAbort = request = promise = null;
+                    timeout();
                 }
             );
 
